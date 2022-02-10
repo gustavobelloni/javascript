@@ -2,10 +2,15 @@ function carregar() {
     var msg = window.document.querySelector('div#msg')
     var img = window.document.querySelector('img#imagem')
     var data = new Date()
-    var hora = data.getHours()
+    var hora =  data.getHours()
+    var min = data.getMinutes()
+    var seg = data.getSeconds()
     
-    msg.innerHTML = `Agora são ${hora} horas.`
-    if (hora < 12) {
+    msg.innerHTML = `Agora são ${hora}:${min}:${seg}.`
+    if (hora < 5) {
+        img.src = 'imagens/madrugada.png'
+        document.body.style.background = '#010007'
+    } else if(hora < 12) {
         img.src = 'imagens/manha.png'
         document.body.style.background = '#C7E9FD'
     } else if (hora < 18) {
