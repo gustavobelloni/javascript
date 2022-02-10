@@ -3,10 +3,9 @@ function carregar() {
     var img = window.document.querySelector('img#imagem')
     var data = new Date()
     var hora =  data.getHours()
-    var min = data.getMinutes()
-    var seg = data.getSeconds()
+
     
-    msg.innerHTML = `Agora são ${hora}:${min}:${seg}.`
+    msg.innerHTML = `Agora são ${hora} horas.`
     if (hora < 5) {
         img.src = 'imagens/madrugada.png'
         document.body.style.background = '#010007'
