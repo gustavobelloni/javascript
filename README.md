@@ -1,2 +1,2 @@
 # javascript
- C:\Users\PICHAU\Documents\estudos
+JavaScript Study Session
